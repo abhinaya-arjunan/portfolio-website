@@ -1,0 +1,344 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  --white: #ffffff;
+
+  --black: #000000;
+
+  
+  --first-color: #4d63d9;
+  --first-color-light: #c1c6dd;
+  --first-color-alt: #3f51c9;
+  --title-color: #1a1a1a;
+  --text-color: #444444;
+  --text-color-light: #777777;
+  --body-color: #ffffff;
+  --container-color: #f5f7ff;
+
+  /*========== Font and typography ==========*/
+  --body-font: "Syne", sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+
+/*========== Responsive typography==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, input, textarea, button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  padding-top: var(--header-height);
+  color: var(--text-color);
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #f5f7ff, #e3e8ff);
+}
+
+input, button, textarea {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+p {
+  line-height: 130%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a, .button, .skills__card, .certificate__card{
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.skills__card, .certificate__card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+  scroll-margin-top: 4rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: whitesmoke;
+  z-index: var(--z-fixed);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid layout inside header */
+.nav {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+/* Logo */
+.nav__logo {
+  font-weight: var(--font-bold);
+  color: var(--black);
+  font-size: 1.1rem;
+}
+
+/* Menu box */
+.nav__menu {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+}
+
+/* Nav list */
+.nav__list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Links */
+.nav__link {
+  color: var(--black);
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav__link:hover, .nav__link.active-link {
+  color: var(--first-color-light);
+}
+
+
+/*=============== HOME ===============*/
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+  color: var(--title-color);
+  margin-bottom: 1rem;
+}
+
+.home__profession {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.5rem;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  padding: 0.75rem 2rem;
+  background-color: var(--first-color);
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 0.5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/*=============== INFO  ===============*/
+.info__container {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: var(--text-color-light);
+}
+
+/* SKILLS */
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skills__card {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.skills__card:hover {
+  transform: translateY(-8px);
+  background-color: var(--first-color-light);
+}
+
+/*=============== CERTIFICATE ===============*/
+.certificate__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.certificate__card {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.certificate__card:hover {
+  transform: translateY(-8px);
+  background-color: var(--first-color-light);
+}
+
+/*=============== CONTACT ===============*/
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact__container a {
+  color: var(--first-color);   /* same color for all */
+  text-decoration: none;
+}
+
+.contact__container a:hover {
+  color: var(--first-color-alt);
+}
+
+
+/*=============== FOOTER ===============*/
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--container-color);
+  color: var(--text-color-light);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 480px) {
+  .section {
+    padding-block: 3rem 1rem;
+  }
+
+  .home__name {
+    font-size: 2.5rem;
+  }
+
+  .home__profession {
+    font-size: 1.2rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .skills__container,   .certificate__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+
+  .container {
+    padding: 0 2rem;
+  }
+
+  .home {
+    text-align: center;
+  }
+
+  .info__container {
+    font-size: var(--normal-font-size);
+  }
+
+  .skills__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .certificate__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
