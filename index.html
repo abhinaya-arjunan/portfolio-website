@@ -1,113 +1,476 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Responsive Portfolio</title>
+<html lang="en">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
-        
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Arjunan Abhinaya</a>
-                <div class="nav__menu">
-                    <ul class="nav__list">
-                        <li><a href="#home" class="nav__link">Home</a></li>
-                        <li><a href="#info" class="nav__link">About</a></li>
-                        <li><a href="#skills" class="nav__link">Skills</a></li>
-                        <li><a href="#certificates" class="nav__link">Certificates</a></li>
-                        <li><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        
-        <!--==================== HOME ====================-->
-        <section class="home section" id="home">
-            <div class="home__container container">
-                <h1 class="home__name">Hi, I'm Abhinaya</h1>
-                <h3 class="home__profession">Software & IT Professional</h3>
-                <a href="#contact" class="button">Contact Me</a>
+    <title>Abhinaya Arjunan | Portfolio</title>
+
+    <!-- Remix Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <a href="#home" class="nav__logo">
+                Abhinaya Arjunan
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#info" class="nav__link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+
+                    <li>
+                        <a href="#certificates" class="nav__link">Certificates</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+
+                </ul>
             </div>
-        </section>
 
-        <!--==================== ABOUT ====================-->
-        <section class="info section" id="info">
-            <h2 class="section__title">About Me</h2>
-            <div class="info__container container">
+        </nav>
+    </header>
+
+
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+
+        <div class="home__container container">
+
+            <h1 class="home__name">
+                Hi, I'm Abhinaya
+            </h1>
+
+            <h3 class="home__profession">
+                Python | SQL | Machine Learning | Generative AI
+            </h3>
+
+            <p class="home__description">
+                ECE graduate building software and AI-driven solutions with
+                Python, data, machine learning, and emerging Generative AI technologies.
+            </p>
+
+        </div>
+
+
+        <div class="home__buttons">
+
+            <a href="#projects" class="button">
+                View Projects
+            </a>
+
+            <a href="#contact" class="button button--secondary">
+                Contact Me
+            </a>
+
+        </div>
+
+
+        <!-- Social Icons -->
+        <div class="home__social">
+
+            <a
+                href="https://github.com/abhinaya-arjunan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+            >
+                <i class="ri-github-fill"></i>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/abhinaya-arjunan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+            >
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+
+            <a
+                href="mailto:abhinayaa915@gmail.com"
+                aria-label="Email"
+            >
+                <i class="ri-mail-line"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== ABOUT ====================-->
+    <section class="info section" id="info">
+
+        <h2 class="section__title">
+            About Me
+        </h2>
+
+        <div class="info__container container">
+
+            <p>
+                I am an Electronics and Communication Engineering graduate
+                with hands-on experience in Python, SQL, machine learning,
+                and embedded systems. I have worked on Python-based data
+                processing, SQL data analysis, and LSTM-based time-series
+                modeling. I am also building my knowledge of Generative AI,
+                LLMs, and Agentic AI. I enjoy solving technical problems and
+                developing practical software and AI-based solutions.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+
+        <h2 class="section__title">
+            Skills
+        </h2>
+
+        <div class="skills__container container">
+
+            <div class="skills__card">
+                <i class="ri-code-s-slash-line"></i>
+                <p>Python</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-database-2-line"></i>
+                <p>MySQL</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-brain-line"></i>
+                <p>Machine Learning</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-sparkling-line"></i>
+                <p>Generative AI Fundamentals</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-robot-2-line"></i>
+                <p>Agentic AI Concepts</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-javascript-line"></i>
+                <p>Java</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-html5-line"></i>
+                <p>HTML / CSS / JavaScript</p>
+            </div>
+
+            <div class="skills__card">
+                <i class="ri-github-fill"></i>
+                <p>Git / GitHub</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" id="projects">
+
+        <h2 class="section__title">
+            Projects
+        </h2>
+
+        <div class="projects__container container">
+
+            <div class="project__card">
+
+                <h3>
+                    Remaining Useful Life Prediction of EV Batteries
+                </h3>
+
+                <span>
+                    Python | Machine Learning | LSTM
+                </span>
+
                 <p>
-                    I am Arjunan Abhinaya, an aspiring IT professional with a strong interest in data-driven solutions and software development. I have built a solid foundation in SQL, Python, HTML, CSS, and database design, enabling me to work effectively with data and develop applications. I enjoy solving problems, learning new technologies, and continuously improving my technical skills. I aim to contribute to organizations by building reliable systems and delivering meaningful, data-driven insights.
+                    Processed battery degradation data using Python and
+                    developed an LSTM-based time-series model to learn
+                    degradation patterns and predict battery Remaining
+                    Useful Life.
                 </p>
-            </div>
-        </section>
 
-        <!--==================== SKILLS ====================-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <div class="skills__container container">
-                <div class="skills__card">
-                    <p>Python</p>
-                </div>
-                <div class="skills__card">
-                    <p>MySQL</p>
-                </div>
-                
-                <div class="skills__card">
-                    <p>HTML</p>
-                </div>
-
-                <div class="skills__card">
-                    <p>CSS</p>
-                </div>
-            </div>
-        </section>
-
-
-        <!--==================== CERTIFICATE ====================-->
-        <section class="work section" id="work">
-            <h2 class="section__title">Certificates</h2>
-            <div class="certificate__container container">
-                <div class="certificate__card">
-                    <h4>SQL (Intermediate) - HackerRank</h4>
-                </div>
-
-                <div class="certificate__card">
-                    <h4>SQL (Basic) - HackerRank</h4>
-                </div>
-
-                <div class="certificate__card">
-                    <h4>Python certification - freeCodeCamp</h4>
-                </div>
-
-                <div class="certificate__card">
-                    <h4>Python 101 for Data Science - Cognitive Class (IBM Developer Skills Network)</h4>
-                </div>
-            </div>
-        </section>
-
-        <!--==================== CONTACT ====================-->
-        <section class="contact section" id="contact">
-            <h2 class="section__title">Contact</h2>
-            <div class="contact__container container">
-                <p><strong>Email:</strong> <a href="mailto:abhinayaa915@gmail.com" target="_blank">abhinayaa915@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abhinaya-arjunan/" target="_blank">linkedin.com/in/abhinaya-arjunan</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/abhinaya-arjunan" target="_blank">github.com/abhinaya-arjunan</a></p>
             </div>
 
-        </section>
-        
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <p>© 2026 Arjunan Abhinaya | All Rights Reserved</p>
-        </footer>
 
-    </body>
+            <div class="project__card">
+
+                <h3>
+                    College Management Database & SQL Analysis
+                </h3>
+
+                <span>
+                    MySQL | SQL
+                </span>
+
+                <p>
+                    Designed a relational college management database and
+                    developed SQL queries using JOIN, GROUP BY, filtering,
+                    and aggregate functions for data analysis and reporting.
+                </p>
+
+            </div>
+
+
+            <div class="project__card">
+
+                <h3>
+                    IoT-Based Water Management System
+                </h3>
+
+                <span>
+                    Python | Raspberry Pi | IoT
+                </span>
+
+                <p>
+                    Developed a Raspberry Pi-based water-level monitoring
+                    system with sensor interfacing, actuator control,
+                    and a web-based dashboard for monitoring system status.
+                </p>
+
+            </div>
+
+
+            <!-- Add later when ready
+
+            <div class="project__card">
+
+                <h3>
+                    STM32F407 Interrupt Controller
+                </h3>
+
+                <span>
+                    Embedded C | STM32F407 | ARM Cortex-M4
+                </span>
+
+                <p>
+                    Bare-metal ARM Cortex-M4 project implementing interrupt
+                    priorities and multi-source interrupt handling.
+                </p>
+
+            </div>
+
+            -->
+
+        </div>
+
+    </section>
+
+
+    <!--==================== EDUCATION ====================-->
+    <section class="education section" id="education">
+
+        <h2 class="section__title">
+            Education
+        </h2>
+
+        <div class="education__container container">
+
+            <div class="education__card">
+
+                <h3>
+                    B.E. Electronics and Communication Engineering
+                </h3>
+
+                <p>
+                    Sri Sivasubramaniya Nadar College of Engineering, Chennai
+                </p>
+
+                <p>
+                    2020 - 2024
+                </p>
+
+            </div>
+
+
+            <div class="education__card">
+
+                <h3>
+                    Grade 12
+                </h3>
+
+                <p>
+                    Narayana Jr. College, Nellore
+                </p>
+
+                <p>
+                    2019 - 2020
+                </p>
+
+            </div>
+
+
+            <div class="education__card">
+
+                <h3>
+                    Grade 10
+                </h3>
+
+                <p>
+                    Veda Vyasa EM High School, Nellore
+                </p>
+
+                <p>
+                    2017 - 2018
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== CERTIFICATES ====================-->
+    <section class="certificates section" id="certificates">
+
+        <h2 class="section__title">
+            Certificates
+        </h2>
+
+        <div class="certificate__container container">
+
+            <div class="certificate__card">
+                <i class="ri-award-line"></i>
+                <h4>Generative AI for Beginners</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-award-line"></i>
+                <h4>Introduction to Agentic AI & LLM Architectures</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-award-line"></i>
+                <h4>AI Agent Frameworks</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-database-line"></i>
+                <h4>SQL (Intermediate) - HackerRank</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-database-line"></i>
+                <h4>SQL (Basic) - HackerRank</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-code-line"></i>
+                <h4>Python - freeCodeCamp</h4>
+            </div>
+
+            <div class="certificate__card">
+                <i class="ri-book-open-line"></i>
+                <h4>Python 101 for Data Science - IBM Cognitive Class</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section" id="contact">
+
+        <h2 class="section__title">
+            Contact
+        </h2>
+
+        <div class="contact__container container">
+
+            <a
+                href="mailto:abhinayaa915@gmail.com"
+                class="contact__item"
+            >
+                <i class="ri-mail-line"></i>
+                <span>abhinayaa915@gmail.com</span>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/abhinaya-arjunan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__item"
+            >
+                <i class="ri-linkedin-box-fill"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a
+                href="https://github.com/abhinaya-arjunan"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact__item"
+            >
+                <i class="ri-github-fill"></i>
+                <span>GitHub</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <p>
+            © 2026 Abhinaya Arjunan | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 
 </html>
